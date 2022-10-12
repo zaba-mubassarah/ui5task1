@@ -1,0 +1,12 @@
+<mvc:View
+
+	controllerName=""
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+<Text text="Hello World"/>
+</mvc:View>

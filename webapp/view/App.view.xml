@@ -1,0 +1,13 @@
+<mvc:View controllerName="task.shanita.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    <App>
+        <pages>
+            <Page title="{i18n>homePageTitle}">
+                <List headerText="{i18n>title}" class="sapUiResponsiveMargin" width="auto" items="{orders>/orderList}">
+                    <items>
+                        <ObjectListItem title="Id:{orders>oderid}  Status:{orders>status}" />
+                    </items>
+                </List>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
