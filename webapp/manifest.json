@@ -19,6 +19,36 @@
         }
     },
     "sap.ui5": {
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "task.shanita.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": false
+            },
+            "routes": [
+                
+                {
+                    "name": "Main",
+                    "pattern": "",
+                    "target": [
+                        "Main"
+                    ]
+                }
+            ],
+            "targets": {
+                "Main": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "Orders",
+                    "viewName": "Orders"
+                }
+            }
+        },
         "rootView": {
             "viewName": "task.shanita.view.App",
             "type": "XML",
@@ -28,7 +58,8 @@
             "minUI5Version": "1.93",
             "libs": {
                 "sap.ui.core": {},
-                "sap.m": {}
+                "sap.m": {},
+                "sap.ui.table": {}
             }
         },
         "models": {
